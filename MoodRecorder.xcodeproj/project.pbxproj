@@ -15,6 +15,19 @@
 		A959544E1CEC0D0E00E64363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A959544C1CEC0D0E00E64363 /* LaunchScreen.storyboard */; };
 		A95954591CEC0D0E00E64363 /* MoodRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95954581CEC0D0E00E64363 /* MoodRecorderTests.m */; };
 		A95954641CEC0D0E00E64363 /* MoodRecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A95954631CEC0D0E00E64363 /* MoodRecorderUITests.m */; };
+		A95954771CEC578900E64363 /* HistoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95954761CEC578900E64363 /* HistoryTableViewController.m */; };
+		A959547A1CED753300E64363 /* MeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95954791CED753300E64363 /* MeasurementViewController.m */; };
+		A95954801CEDFE5200E64363 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A959547F1CEDFE5200E64363 /* SettingViewController.m */; };
+		A95954831CEEC91000E64363 /* PulseWaveMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95954821CEEC91000E64363 /* PulseWaveMeasurementViewController.m */; };
+		A95954861CEED39200E64363 /* Result1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A95954851CEED39200E64363 /* Result1ViewController.m */; };
+		A959548C1CEEE29800E64363 /* DrawResultPlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = A959548B1CEEE29800E64363 /* DrawResultPlotView.m */; };
+		A9B6AC411CF0225900F9A66D /* CombinedMeasurementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6AC401CF0225900F9A66D /* CombinedMeasurementViewController.m */; };
+		A9B6AC441CF05FA200F9A66D /* Result2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6AC431CF05FA200F9A66D /* Result2ViewController.m */; };
+		A9B6AC521CF078E400F9A66D /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6AC491CF078E400F9A66D /* BEMAverageLine.m */; };
+		A9B6AC531CF078E400F9A66D /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6AC4B1CF078E400F9A66D /* BEMCircle.m */; };
+		A9B6AC541CF078E400F9A66D /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6AC4D1CF078E400F9A66D /* BEMLine.m */; };
+		A9B6AC551CF078E400F9A66D /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6AC4F1CF078E400F9A66D /* BEMPermanentPopupView.m */; };
+		A9B6AC561CF078E400F9A66D /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9B6AC511CF078E400F9A66D /* BEMSimpleLineGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +64,34 @@
 		A959545F1CEC0D0E00E64363 /* MoodRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95954631CEC0D0E00E64363 /* MoodRecorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoodRecorderUITests.m; sourceTree = "<group>"; };
 		A95954651CEC0D0E00E64363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A95954731CEC0FB000E64363 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		A95954741CEC0FB000E64363 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A95954751CEC578900E64363 /* HistoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTableViewController.h; sourceTree = "<group>"; };
+		A95954761CEC578900E64363 /* HistoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTableViewController.m; sourceTree = "<group>"; };
+		A95954781CED753300E64363 /* MeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasurementViewController.h; sourceTree = "<group>"; };
+		A95954791CED753300E64363 /* MeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasurementViewController.m; sourceTree = "<group>"; };
+		A959547E1CEDFE5200E64363 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		A959547F1CEDFE5200E64363 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		A95954811CEEC91000E64363 /* PulseWaveMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulseWaveMeasurementViewController.h; sourceTree = "<group>"; };
+		A95954821CEEC91000E64363 /* PulseWaveMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulseWaveMeasurementViewController.m; sourceTree = "<group>"; };
+		A95954841CEED39200E64363 /* Result1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result1ViewController.h; sourceTree = "<group>"; };
+		A95954851CEED39200E64363 /* Result1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result1ViewController.m; sourceTree = "<group>"; };
+		A959548A1CEEE29800E64363 /* DrawResultPlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawResultPlotView.h; sourceTree = "<group>"; };
+		A959548B1CEEE29800E64363 /* DrawResultPlotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawResultPlotView.m; sourceTree = "<group>"; };
+		A9B6AC3F1CF0225900F9A66D /* CombinedMeasurementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombinedMeasurementViewController.h; sourceTree = "<group>"; };
+		A9B6AC401CF0225900F9A66D /* CombinedMeasurementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombinedMeasurementViewController.m; sourceTree = "<group>"; };
+		A9B6AC421CF05FA200F9A66D /* Result2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result2ViewController.h; sourceTree = "<group>"; };
+		A9B6AC431CF05FA200F9A66D /* Result2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result2ViewController.m; sourceTree = "<group>"; };
+		A9B6AC481CF078E400F9A66D /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAverageLine.h; sourceTree = "<group>"; };
+		A9B6AC491CF078E400F9A66D /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAverageLine.m; sourceTree = "<group>"; };
+		A9B6AC4A1CF078E400F9A66D /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		A9B6AC4B1CF078E400F9A66D /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		A9B6AC4C1CF078E400F9A66D /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		A9B6AC4D1CF078E400F9A66D /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		A9B6AC4E1CF078E400F9A66D /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		A9B6AC4F1CF078E400F9A66D /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		A9B6AC501CF078E400F9A66D /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		A9B6AC511CF078E400F9A66D /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +151,23 @@
 				A959544C1CEC0D0E00E64363 /* LaunchScreen.storyboard */,
 				A959544F1CEC0D0E00E64363 /* Info.plist */,
 				A959543E1CEC0D0E00E64363 /* Supporting Files */,
+				A95954751CEC578900E64363 /* HistoryTableViewController.h */,
+				A95954761CEC578900E64363 /* HistoryTableViewController.m */,
+				A95954781CED753300E64363 /* MeasurementViewController.h */,
+				A95954791CED753300E64363 /* MeasurementViewController.m */,
+				A959547E1CEDFE5200E64363 /* SettingViewController.h */,
+				A959547F1CEDFE5200E64363 /* SettingViewController.m */,
+				A95954811CEEC91000E64363 /* PulseWaveMeasurementViewController.h */,
+				A95954821CEEC91000E64363 /* PulseWaveMeasurementViewController.m */,
+				A95954841CEED39200E64363 /* Result1ViewController.h */,
+				A95954851CEED39200E64363 /* Result1ViewController.m */,
+				A9B6AC421CF05FA200F9A66D /* Result2ViewController.h */,
+				A9B6AC431CF05FA200F9A66D /* Result2ViewController.m */,
+				A959548A1CEEE29800E64363 /* DrawResultPlotView.h */,
+				A959548B1CEEE29800E64363 /* DrawResultPlotView.m */,
+				A9B6AC3F1CF0225900F9A66D /* CombinedMeasurementViewController.h */,
+				A9B6AC401CF0225900F9A66D /* CombinedMeasurementViewController.m */,
+				A9B6AC471CF078C000F9A66D /* BEMGraph */,
 			);
 			path = MoodRecorder;
 			sourceTree = "<group>";
@@ -138,6 +196,23 @@
 				A95954651CEC0D0E00E64363 /* Info.plist */,
 			);
 			path = MoodRecorderUITests;
+			sourceTree = "<group>";
+		};
+		A9B6AC471CF078C000F9A66D /* BEMGraph */ = {
+			isa = PBXGroup;
+			children = (
+				A9B6AC481CF078E400F9A66D /* BEMAverageLine.h */,
+				A9B6AC491CF078E400F9A66D /* BEMAverageLine.m */,
+				A9B6AC4A1CF078E400F9A66D /* BEMCircle.h */,
+				A9B6AC4B1CF078E400F9A66D /* BEMCircle.m */,
+				A9B6AC4C1CF078E400F9A66D /* BEMLine.h */,
+				A9B6AC4D1CF078E400F9A66D /* BEMLine.m */,
+				A9B6AC4E1CF078E400F9A66D /* BEMPermanentPopupView.h */,
+				A9B6AC4F1CF078E400F9A66D /* BEMPermanentPopupView.m */,
+				A9B6AC501CF078E400F9A66D /* BEMSimpleLineGraphView.h */,
+				A9B6AC511CF078E400F9A66D /* BEMSimpleLineGraphView.m */,
+			);
+			name = BEMGraph;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +282,7 @@
 				TargetAttributes = {
 					A959543A1CEC0D0E00E64363 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3KPPVYM38R;
 					};
 					A95954531CEC0D0E00E64363 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -270,8 +346,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A959547A1CED753300E64363 /* MeasurementViewController.m in Sources */,
+				A95954861CEED39200E64363 /* Result1ViewController.m in Sources */,
+				A9B6AC441CF05FA200F9A66D /* Result2ViewController.m in Sources */,
+				A9B6AC551CF078E400F9A66D /* BEMPermanentPopupView.m in Sources */,
+				A95954771CEC578900E64363 /* HistoryTableViewController.m in Sources */,
+				A9B6AC541CF078E400F9A66D /* BEMLine.m in Sources */,
+				A9B6AC561CF078E400F9A66D /* BEMSimpleLineGraphView.m in Sources */,
+				A95954801CEDFE5200E64363 /* SettingViewController.m in Sources */,
+				A9B6AC531CF078E400F9A66D /* BEMCircle.m in Sources */,
+				A9B6AC411CF0225900F9A66D /* CombinedMeasurementViewController.m in Sources */,
 				A95954461CEC0D0E00E64363 /* ViewController.m in Sources */,
+				A959548C1CEEE29800E64363 /* DrawResultPlotView.m in Sources */,
+				A95954831CEEC91000E64363 /* PulseWaveMeasurementViewController.m in Sources */,
 				A95954431CEC0D0E00E64363 /* AppDelegate.m in Sources */,
+				A9B6AC521CF078E400F9A66D /* BEMAverageLine.m in Sources */,
 				A95954401CEC0D0E00E64363 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +401,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A95954481CEC0D0E00E64363 /* Base */,
+				A95954731CEC0FB000E64363 /* ja */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -320,6 +410,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A959544D1CEC0D0E00E64363 /* Base */,
+				A95954741CEC0FB000E64363 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -413,10 +504,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MoodRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tubesoft.MoodRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +519,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MoodRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tubesoft.MoodRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +595,7 @@
 				A959546A1CEC0D0E00E64363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A959546B1CEC0D0E00E64363 /* Build configuration list for PBXNativeTarget "MoodRecorderTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +604,7 @@
 				A959546D1CEC0D0E00E64363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A959546E1CEC0D0E00E64363 /* Build configuration list for PBXNativeTarget "MoodRecorderUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +613,7 @@
 				A95954701CEC0D0E00E64363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
