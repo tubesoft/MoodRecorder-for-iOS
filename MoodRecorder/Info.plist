@@ -32,6 +32,29 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>1</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Measure Pulse Wave</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>2</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Combined Measurement</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>3</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Record Mood</string>
+		</dict>
+	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>This App is using camera.</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -401,7 +401,7 @@
     self.videoDataOutput.videoSettings = @{(id)kCVPixelBufferPixelFormatTypeKey : [NSNumber numberWithInt:kCVPixelFormatType_32BGRA]};
     
     AVCaptureDeviceFormat *selectedFormat = nil;
-    int32_t maxWidth = 0;
+    int32_t maxWidth = 100000; //maxと書いてあるが、さしあたり最小値を出したいので0ではなく100000にして減らしていく。
     AVFrameRateRange *frameRateRange = nil;
     
     for (AVCaptureDeviceFormat *format in [camera formats]) {
@@ -412,7 +412,8 @@
             CMVideoDimensions dimensions = CMVideoFormatDescriptionGetDimensions(desc);
             int32_t width = dimensions.width;
             
-            if (range.minFrameRate <= self.fps && self.fps <= range.maxFrameRate && width >= maxWidth) {
+//            if (range.minFrameRate <= self.fps && self.fps <= range.maxFrameRate && width >= maxWidth) {
+            if (range.minFrameRate <= self.fps && self.fps <= range.maxFrameRate && width <= maxWidth) {
                 
                 selectedFormat = format;
                 frameRateRange = range;
@@ -420,19 +421,42 @@
             }
         }
     }
+    if ([camera lockForConfiguration:&error]) {
+        //露出などの設定をつけてみた
+        AVCaptureWhiteBalanceGains gains;
+        gains.blueGain = 1.0;
+        gains.greenGain = 1.0;
+        gains.redGain = 1.0;
+        
+        //    AVCaptureWhiteBalanceTemperatureAndTintValues temp;
+        //    temp.temperature = 8000;
+        //    temp.tint = -150;
+        //    gains = [camera deviceWhiteBalanceGainsForTemperatureAndTintValues:temp];
+        
+        //    CMTime duration = camera.activeFormat.maxExposureDuration;
+        //    CMTime duration = CMTimeMake(0, 0);
+        //    NSLog(@"%lld, %d", AVCaptureExposureDurationCurrent.value, AVCaptureExposureDurationCurrent.timescale);
+        
+        camera.exposureMode = AVCaptureExposureModeLocked;
+        camera.focusMode = AVCaptureFocusModeLocked;
+        camera.whiteBalanceMode = AVCaptureWhiteBalanceModeLocked;
+        [camera setExposureModeCustomWithDuration:AVCaptureExposureDurationCurrent ISO:34 completionHandler:nil];
+        [camera setFocusModeLockedWithLensPosition:0.5 completionHandler:nil];
+        [camera setWhiteBalanceModeLockedWithDeviceWhiteBalanceGains:gains  completionHandler:nil];
+        [camera setAutomaticallyAdjustsVideoHDREnabled:false];
+        [camera setExposureTargetBias:0.01 completionHandler:nil];
+        
+        //    camera.torchMode = AVCaptureTorchModeOn;
+        [camera setTorchModeOnWithLevel:AVCaptureMaxAvailableTorchLevel error:nil];
+        camera.activeFormat = selectedFormat;
+        camera.activeVideoMinFrameDuration = CMTimeMake(1, self.fps);
+        camera.activeVideoMaxFrameDuration = CMTimeMake(1, self.fps);
+        [camera unlockForConfiguration];
+        
+    } else {
+        NSLog(@"%@", error);
+    }
     
-    [camera lockForConfiguration:nil];
-    //露出の設定をつけてみた
-    [camera setExposureModeCustomWithDuration:AVCaptureExposureDurationCurrent ISO:100 completionHandler:nil];
-//    camera.exposureMode = AVCaptureExposureModeCustom;
-//    camera.focusMode = AVCaptureFocusModeLocked;
-//    camera.whiteBalanceMode= AVCaptureWhiteBalanceModeLocked;
-    
-    camera.torchMode=AVCaptureTorchModeOn;
-    camera.activeFormat = selectedFormat;
-    camera.activeVideoMinFrameDuration = CMTimeMake(1, self.fps);
-    camera.activeVideoMaxFrameDuration = CMTimeMake(1, self.fps);
-    [camera unlockForConfiguration];
     
     [self.session startRunning];
 }

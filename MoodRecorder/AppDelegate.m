@@ -42,4 +42,30 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL succeeded))completionHandler {
+    
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES);
+//    NSString *docDir = [paths objectAtIndex:0];
+//
+//    NSArray *array = [NSArray arrayWithObjects:
+//                      @(0),
+//                      @(10),
+//                      nil];
+//    NSString *filePath = [NSString stringWithFormat:@"%@/pickerValues.dat", docDir];
+//    BOOL successful = [NSKeyedArchiver archiveRootObject:array toFile:filePath];
+//    if (successful) {
+//        NSLog(@"%@", @"ピッカーデータの保存に成功しました。");
+//    }
+
+    NSString *touch= shortcutItem.type;
+    if ([touch isEqualToString:@"1"]) {
+        NSLog(@"%@", @"Press One");
+    } else if ([touch isEqualToString:@"2"]) {
+        NSLog(@"%@", @"Press Two");
+    } else if ([touch isEqualToString:@"3"]) {
+        NSLog(@"%@", @"Press Three");
+    }
+    
+}
+
 @end
